@@ -11,6 +11,7 @@
 		DC46291D284664F200A12141 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC46291C284664F200A12141 /* ContentView.swift */; };
 		DC46291F284664F300A12141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC46291E284664F300A12141 /* Assets.xcassets */; };
 		DC462922284664F300A12141 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC462921284664F300A12141 /* Preview Assets.xcassets */; };
+		DC46292A2847C08F00A12141 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = DC4629292847C08F00A12141 /* RiveRuntime */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC46292A2847C08F00A12141 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Rive Animations";
+			packageProductDependencies = (
+				DC4629292847C08F00A12141 /* RiveRuntime */,
+			);
 			productName = "Rive Animations";
 			productReference = DC462917284664F200A12141 /* Rive Animations.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = DC46290E284664F200A12141;
+			packageReferences = (
+				DC4629282847C08F00A12141 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = DC462918284664F200A12141 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC4629282847C08F00A12141 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC4629292847C08F00A12141 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC4629282847C08F00A12141 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC46290F284664F200A12141 /* Project object */;
 }
