@@ -20,6 +20,9 @@
 		DC4629392847C21900A12141 /* shapes.riv in Resources */ = {isa = PBXBuildFile; fileRef = DC4629322847C21900A12141 /* shapes.riv */; };
 		DC46293A2847C21900A12141 /* button.riv in Resources */ = {isa = PBXBuildFile; fileRef = DC4629332847C21900A12141 /* button.riv */; };
 		DC46293B2847C21900A12141 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = DC4629342847C21900A12141 /* icons.riv */; };
+		DC4629402849152A00A12141 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC46293D2849152A00A12141 /* Inter-Regular.ttf */; };
+		DC4629412849152A00A12141 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC46293E2849152A00A12141 /* Poppins-Bold.ttf */; };
+		DC4629422849152A00A12141 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC46293F2849152A00A12141 /* Inter-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,10 @@
 		DC4629322847C21900A12141 /* shapes.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = shapes.riv; sourceTree = "<group>"; };
 		DC4629332847C21900A12141 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
 		DC4629342847C21900A12141 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
+		DC46293D2849152A00A12141 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		DC46293E2849152A00A12141 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		DC46293F2849152A00A12141 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		DC4629432849156500A12141 /* Rive-Animations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rive-Animations-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +76,12 @@
 		DC462919284664F200A12141 /* Rive Animations */ = {
 			isa = PBXGroup;
 			children = (
+				DC4629432849156500A12141 /* Rive-Animations-Info.plist */,
 				DC46291A284664F200A12141 /* Rive_AnimationsApp.swift */,
 				DC46292B2847C11600A12141 /* Onboarding.swift */,
 				DC46291C284664F200A12141 /* ContentView.swift */,
 				DC46291E284664F300A12141 /* Assets.xcassets */,
+				DC46293C2849152A00A12141 /* Fonts */,
 				DC46292D2847C21900A12141 /* RiveAssets */,
 				DC462920284664F300A12141 /* Preview Content */,
 			);
@@ -100,6 +109,17 @@
 			);
 			name = RiveAssets;
 			path = "SwiftUI Animations/RiveAssets";
+			sourceTree = SOURCE_ROOT;
+		};
+		DC46293C2849152A00A12141 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DC46293D2849152A00A12141 /* Inter-Regular.ttf */,
+				DC46293E2849152A00A12141 /* Poppins-Bold.ttf */,
+				DC46293F2849152A00A12141 /* Inter-SemiBold.ttf */,
+			);
+			name = Fonts;
+			path = "SwiftUI Animations/Fonts";
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -166,12 +186,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4629422849152A00A12141 /* Inter-SemiBold.ttf in Resources */,
 				DC4629392847C21900A12141 /* shapes.riv in Resources */,
 				DC4629372847C21900A12141 /* check.riv in Resources */,
 				DC462922284664F300A12141 /* Preview Assets.xcassets in Resources */,
 				DC4629382847C21900A12141 /* menu_button.riv in Resources */,
 				DC4629352847C21900A12141 /* house.riv in Resources */,
 				DC46293A2847C21900A12141 /* button.riv in Resources */,
+				DC4629402849152A00A12141 /* Inter-Regular.ttf in Resources */,
+				DC4629412849152A00A12141 /* Poppins-Bold.ttf in Resources */,
 				DC46291F284664F300A12141 /* Assets.xcassets in Resources */,
 				DC4629362847C21900A12141 /* confetti.riv in Resources */,
 				DC46293B2847C21900A12141 /* icons.riv in Resources */,
@@ -319,6 +342,7 @@
 				DEVELOPMENT_TEAM = 9786TSAYF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rive-Animations-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -348,6 +372,7 @@
 				DEVELOPMENT_TEAM = 9786TSAYF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rive-Animations-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

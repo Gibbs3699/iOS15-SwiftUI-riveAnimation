@@ -17,17 +17,25 @@ struct Onboarding: View {
 
             background
             
-            button.view()
-                .frame(width: 236, height: 64)
-                .overlay(
-                    Label("Start the course", systemImage: "arrow.forward")
-                        .offset(x: 4, y: 4)
-                        .font(.headline)
-                )
-            
-                .onTapGesture {
-                    button.play(animationName: "active")
+            VStack {
+                
+                Text("Learn Design & Code")
+                    .font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle))
+                    .frame(width: 260, alignment: .leading)
+                
+                
+                button.view()
+                    .frame(width: 236, height: 64)
+                    .overlay(
+                        Label("Start the course", systemImage: "arrow.forward")
+                            .offset(x: 4, y: 4)
+                            .font(.headline)
+                    )
+                
+                    .onTapGesture {
+                        button.play(animationName: "active")
                 }
+            }
         }
         
     }
