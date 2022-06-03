@@ -23,6 +23,7 @@
 		DC4629402849152A00A12141 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC46293D2849152A00A12141 /* Inter-Regular.ttf */; };
 		DC4629412849152A00A12141 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC46293E2849152A00A12141 /* Poppins-Bold.ttf */; };
 		DC4629422849152A00A12141 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC46293F2849152A00A12141 /* Inter-SemiBold.ttf */; };
+		DC462945284A4BEF00A12141 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC462944284A4BEF00A12141 /* CustomFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		DC46293E2849152A00A12141 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		DC46293F2849152A00A12141 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		DC4629432849156500A12141 /* Rive-Animations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rive-Animations-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DC462944284A4BEF00A12141 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				DC46291A284664F200A12141 /* Rive_AnimationsApp.swift */,
 				DC46292B2847C11600A12141 /* Onboarding.swift */,
 				DC46291C284664F200A12141 /* ContentView.swift */,
+				DC462944284A4BEF00A12141 /* CustomFont.swift */,
 				DC46291E284664F300A12141 /* Assets.xcassets */,
 				DC46293C2849152A00A12141 /* Fonts */,
 				DC46292D2847C21900A12141 /* RiveAssets */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC46292C2847C11600A12141 /* Onboarding.swift in Sources */,
+				DC462945284A4BEF00A12141 /* CustomFont.swift in Sources */,
 				DC46291D284664F200A12141 /* ContentView.swift in Sources */,
 				DC46291B284664F200A12141 /* Rive_AnimationsApp.swift in Sources */,
 			);

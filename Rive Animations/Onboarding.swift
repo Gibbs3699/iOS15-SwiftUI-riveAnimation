@@ -14,15 +14,21 @@ struct Onboarding: View {
     var body: some View {
         
         ZStack {
-
             background
             
-            VStack {
-                
+            VStack(alignment: .leading, spacing: 16) {
                 Text("Learn Design & Code")
                     .font(.custom("Poppins Bold", size: 60, relativeTo: .largeTitle))
                     .frame(width: 260, alignment: .leading)
                 
+                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                    .customFont(textStyle: .body)
+                    .font(.headline)
+                    .opacity(0.7)
+                    .frame(width: .infinity, alignment: .leading)
+                
+                
+                Spacer()
                 
                 button.view()
                     .frame(width: 236, height: 64)
@@ -35,9 +41,15 @@ struct Onboarding: View {
                     .onTapGesture {
                         button.play(animationName: "active")
                 }
+                
+                Text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                    .customFont(textStyle: .body)
+                    .font(.headline)
+                    .opacity(0.7)
             }
         }
-        
+        .padding(40)
+        .padding(.top, 40)
     }
 
     var background: some View {
