@@ -22,7 +22,7 @@ struct Onboarding: View {
                     .frame(width: 260, alignment: .leading)
                 
                 Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
-                    .customFont(textStyle: .body)
+                    .customFont(.body)
                     .font(.headline)
                     .opacity(0.7)
                     .frame(width: .infinity, alignment: .leading)
@@ -43,7 +43,7 @@ struct Onboarding: View {
                 }
                 
                 Text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-                    .customFont(textStyle: .body)
+                    .customFont(.body)
                     .font(.headline)
                     .opacity(0.7)
             }
