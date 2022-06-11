@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SignInView: View {
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
         VStack(spacing: 24) {
             
@@ -17,6 +20,29 @@ struct SignInView: View {
             
             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
                 .customFont(.headline)
+            
+            VStack(alignment: .leading) {
+                Text("Email")
+                    .customFont(.subheadline)
+                    .foregroundColor(.secondary)
+                TextField("", text: $email)
+                    .customTextField()
+            }
+            
+            VStack(alignment: .leading) {
+                Text("Password")
+                    .customFont(.subheadline)
+                    .foregroundColor(.secondary)
+                SecureField("", text: $password)
+                    .customTextField(image: Image("Icon Lock"))
+            }
+            
+            HStack {
+                Rectangle().frame(height: 1).opacity(0.1)
+                Text("OR").customFont(.subheadline2)
+                    .foregroundColor(.black.opacity(0.3))
+                Rectangle().frame(height: 1).opacity(0.1)
+            }
             
             Divider()
             
